@@ -49,6 +49,10 @@
 
 @media (max-width: $medium) {
   .design {
+    h2 {
+      font-size: 2.8rem;
+    }
+
     .images {
       flex-direction: column;
       margin-top: 160px;

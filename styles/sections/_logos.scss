@@ -67,6 +67,9 @@
 
 @media (max-width: $medium) {
   .logos {
+    h2 {
+      font-size: 2.8rem;
+    }
     .container {
       flex-direction: column;
 

@@ -17,7 +17,7 @@
   img {
     max-width: 80%;
     z-index: 999;
-    padding-bottom: 10rem;
+
     z-index: -2;
   }
 
@@ -39,8 +39,9 @@
 
 @media (max-width: $small) {
   .ui {
+    padding-bottom: 1rem;
     h2 {
-      padding-top: 3rem;
+      padding-top: 1rem;
     }
   }
 }
