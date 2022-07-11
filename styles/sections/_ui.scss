@@ -1,0 +1,46 @@
+@import "../base/variables";
+@import "../base/breakpoints";
+
+.ui {
+  text-align: center;
+  background-color: $secondary-color;
+  position: relative;
+  z-index: -4;
+  padding-bottom: 6rem;
+
+  h2 {
+    font-size: 3.4rem;
+    color: $fifth-color;
+    padding-top: 4rem;
+  }
+
+  img {
+    max-width: 80%;
+    z-index: 999;
+    padding-bottom: 10rem;
+    z-index: -2;
+  }
+
+  .uisvg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    overflow-x: hidden;
+    z-index: -3;
+    transform: rotate(180deg);
+    transform: scaleX(-1);
+
+    path {
+      width: 100px;
+    }
+  }
+}
+
+@media (max-width: $small) {
+  .ui {
+    h2 {
+      padding-top: 3rem;
+    }
+  }
+}

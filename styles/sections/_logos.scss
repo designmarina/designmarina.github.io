@@ -1,0 +1,125 @@
+@import "../base/variables";
+@import "../base/breakpoints";
+
+.logos {
+  position: relative;
+  background-color: $primary-color;
+  z-index: -2;
+
+  h2 {
+    font-size: 3.4rem;
+    color: $primary-color;
+    z-index: 3;
+    text-align: center;
+    padding-top: 3.5rem;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 6rem;
+    padding-bottom: 12rem;
+
+    .image {
+      width: 50%;
+      img {
+        width: 80%;
+      }
+    }
+    .text {
+      max-width: 60%;
+      width: 30%;
+      color: $secondary-color;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .designsvg {
+    position: absolute;
+    top: -1px;
+    width: 100%;
+    overflow-x: hidden;
+    transform: rotate(180deg);
+    z-index: -1;
+
+    path {
+      width: 100px;
+    }
+  }
+
+  .designsvgtwo {
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    overflow-x: hidden;
+
+    z-index: -1;
+
+    path {
+      width: 100px;
+    }
+  }
+}
+
+@media (max-width: $medium) {
+  .logos {
+    .container {
+      flex-direction: column;
+
+      .image {
+        width: 80%;
+        max-width: 100%;
+        img {
+          margin: 0 auto;
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+      .text {
+        max-width: 100%;
+        width: 80%;
+        text-align: center;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .logos {
+    .container {
+      flex-direction: column;
+      padding-top: 2rem;
+    }
+  }
+}
+
+@media (max-width: $xs) {
+  .logos {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .logos {
+    .container {
+      padding-top: 6rem;
+    }
+  }
+}
+@media (max-width: 358px) {
+  .logos {
+    .container {
+      padding-top: 2rem;
+    }
+  }
+}

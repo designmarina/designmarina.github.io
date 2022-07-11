@@ -1,0 +1,33 @@
+@import "../base/variables";
+@import "../base/breakpoints";
+
+.figma {
+  position: relative;
+  background-color: $secondary-color;
+  z-index: -2;
+
+  img {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .designsvgfigma {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow-x: hidden;
+    transform: rotate(180deg);
+    z-index: -1;
+
+    path {
+      width: 100px;
+    }
+  }
+}
+
+@media (max-width: $small) {
+  .figma {
+    display: none;
+  }
+}

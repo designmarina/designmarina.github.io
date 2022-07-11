@@ -1,0 +1,132 @@
+@import "../base/variables";
+@import "../base/breakpoints";
+
+header {
+  background-color: $secondary-color;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+
+    .logo {
+      font-size: 1.2rem;
+      li {
+        a {
+          color: $light-color;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+
+      .link {
+        a:hover {
+          border-bottom: 1px solid $light-color;
+        }
+      }
+
+      li {
+        padding-left: 2rem;
+        position: relative;
+        cursor: pointer;
+
+        a {
+          color: $light-color;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+
+      .portfolio {
+        position: relative;
+        display: inline-block;
+
+        .dropdown {
+          display: none;
+          position: absolute;
+          background-color: $secondary-color;
+          padding-top: 1rem;
+          padding-right: 1.2rem;
+
+          li {
+            display: block;
+            padding-top: 5px;
+            padding: 5px;
+          }
+        }
+      }
+
+      .dropdown li:hover {
+        background-color: $secondary-color;
+      }
+
+      .portfolio:hover .dropdown {
+        display: block;
+      }
+    }
+
+    .menu {
+      display: none;
+      color: $light-color;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: $small) {
+  header {
+    nav {
+      .links {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        top: 60px;
+        text-align: center;
+        width: 100%;
+        left: 0;
+        background-color: $secondary-color;
+
+        li {
+          padding: 5px;
+        }
+
+        .portfolio {
+          position: relative;
+          display: inline-block;
+          padding: 0px;
+
+          .dropdown {
+            display: none;
+            position: relative;
+            padding: 0;
+            background-color: $secondary-color;
+
+            li {
+              display: block;
+
+              padding: 0px;
+            }
+          }
+        }
+      }
+
+      .active {
+        display: flex;
+      }
+
+      .menu {
+        display: block;
+      }
+    }
+  }
+}

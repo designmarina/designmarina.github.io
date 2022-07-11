@@ -1,0 +1,78 @@
+@import "../base/variables";
+@import "../base/breakpoints";
+
+.heroabout {
+  background-color: $secondary-color;
+  min-height: 50vh;
+}
+
+.about {
+  color: $primary-color;
+  font-size: 1rem;
+
+  h1 {
+    padding-top: 80px;
+  }
+  padding-bottom: 20px;
+}
+
+.hero {
+  height: 100vh;
+  background-color: $secondary-color;
+
+  .container {
+    .text-hero {
+      color: $fifth-color;
+      padding-top: 15vh;
+      font-size: 3.4rem;
+      max-width: 600px;
+      word-wrap: break-word;
+    }
+  }
+
+  .first {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    overflow-x: hidden;
+
+    text {
+      bottom: 10px;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
+
+  .second {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow-x: hidden;
+
+    path {
+      width: 100px;
+    }
+  }
+}
+
+@media (max-width: $xs) {
+  .hero {
+    .container {
+      .text-hero {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .about {
+    color: $primary-color;
+    font-size: 0.9rem;
+    h1 {
+      font-size: 2rem;
+    }
+
+    .text-hero {
+      padding-top: 40px !important;
+    }
+  }
+}

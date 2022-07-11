@@ -1,0 +1,73 @@
+@import "../base/variables";
+@import "../base/breakpoints";
+
+.designtwo {
+  position: relative;
+  background-color: $secondary-color;
+  min-height: 90vh;
+  z-index: -2;
+
+  h2 {
+    font-size: 3.4rem;
+    color: $secondary-color;
+    z-index: 3;
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8rem;
+
+    .second {
+      max-width: 53%;
+      width: 100%;
+    }
+
+    img {
+      max-width: 42.5%;
+      width: 100%;
+    }
+  }
+
+  .designsvg {
+    position: absolute;
+    top: -1px;
+    width: 100%;
+    overflow-x: hidden;
+    transform: rotate(180deg);
+    z-index: -1;
+
+    path {
+      width: 100px;
+    }
+  }
+}
+
+@media (max-width: $medium) {
+  .designtwo {
+    .images {
+      flex-direction: column;
+
+      .second {
+        max-width: 100%;
+      }
+
+      img {
+        padding-bottom: 2rem;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: $xs) {
+  .designtwo {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}

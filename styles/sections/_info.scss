@@ -1,0 +1,108 @@
+@import "../base/variables";
+@import "../base/breakpoints";
+
+.info {
+  background-color: $secondary-color;
+  padding-bottom: 6rem;
+  position: relative;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .text {
+      padding-top: 25vh;
+      max-width: 50%;
+      font-size: 1.3rem;
+      padding-bottom: 50px;
+      padding-right: 1rem;
+      h2 {
+        font-size: 3.4rem;
+        color: $light-color;
+      }
+
+      p {
+        padding-top: 2rem;
+        color: $light-color;
+      }
+
+      li {
+        padding-top: 2rem;
+
+        a {
+          background-color: $primary-color;
+          color: $secondary-color;
+          padding: 10px 15px;
+          font-size: 1.2rem;
+          border-radius: 10px;
+
+          &:hover {
+            background-color: darken($primary-color, 5%);
+            transition: all ease-in-out 0.1s;
+          }
+        }
+      }
+    }
+
+    .image {
+      padding-top: 25vh;
+      display: flex;
+      justify-content: right;
+      img {
+        height: 400px;
+      }
+    }
+  }
+  .infosvg {
+    position: absolute;
+    top: -1px;
+    width: 100%;
+    overflow-x: hidden;
+    transform: rotate(180deg);
+
+    path {
+      width: 100px;
+    }
+  }
+}
+
+@media (max-width: $medium) {
+  .info {
+    .container {
+      flex-direction: column;
+      text-align: center;
+
+      .text {
+        padding-right: 0;
+      }
+
+      .image {
+        padding-top: 0;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $small) {
+  .info {
+    .container {
+      padding-bottom: 0;
+      .text {
+        max-width: 100%;
+      }
+
+      .image {
+        img {
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
