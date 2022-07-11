@@ -6,19 +6,11 @@
   background-color: $primary-color;
   z-index: -2;
 
-  h2 {
-    font-size: 3.4rem;
-    color: $primary-color;
-    z-index: 3;
-    text-align: center;
-    padding-top: 3.5rem;
-  }
-
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 6rem;
+    padding-top: 4rem;
     padding-bottom: 12rem;
 
     .image {
@@ -29,7 +21,7 @@
     }
     .text {
       max-width: 60%;
-      width: 30%;
+      width: 35%;
       color: $secondary-color;
 
       img {
@@ -74,7 +66,7 @@
       flex-direction: column;
 
       .image {
-        width: 80%;
+        width: 100%;
         max-width: 100%;
         img {
           margin: 0 auto;
@@ -86,8 +78,8 @@
 
       .text {
         max-width: 100%;
-        width: 80%;
-        text-align: center;
+        width: 100%;
+
         img {
           width: 100%;
         }

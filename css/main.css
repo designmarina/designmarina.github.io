@@ -146,7 +146,7 @@ header nav .menu {
 
 footer {
   position: relative;
-  background-color: #dbd7ff;
+  background-color: #fbf7ff;
   padding-bottom: 2rem;
 }
 
@@ -384,23 +384,15 @@ footer .second path {
 .designtwo {
   position: relative;
   background-color: #fbf7ff;
-  min-height: 90vh;
   z-index: -2;
-}
-
-.designtwo h2 {
-  font-size: 3.4rem;
-  color: #fbf7ff;
-  z-index: 3;
-  text-align: center;
-  padding-top: 1rem;
 }
 
 .designtwo .images {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 8rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
 }
 
 .designtwo .images .second {
@@ -413,23 +405,7 @@ footer .second path {
   width: 100%;
 }
 
-.designtwo .designsvg {
-  position: absolute;
-  top: -1px;
-  width: 100%;
-  overflow-x: hidden;
-  transform: rotate(180deg);
-  z-index: -1;
-}
-
-.designtwo .designsvg path {
-  width: 100px;
-}
-
 @media (max-width: 1024px) {
-  .designtwo h2 {
-    font-size: 2.8rem;
-  }
   .designtwo .images {
     flex-direction: column;
   }
@@ -443,14 +419,8 @@ footer .second path {
   }
 }
 
-@media (max-width: 480px) {
-  .designtwo h2 {
-    font-size: 3rem;
-  }
-}
-
 .info {
-  background-color: #fbf7ff;
+  background-color: #a398ff;
   padding-bottom: 6rem;
   position: relative;
 }
@@ -470,13 +440,14 @@ footer .second path {
 }
 
 .info .container .text h2 {
-  font-size: 3.4rem;
-  color: #574cb6;
+  padding-top: 1.4rem;
+  font-size: 3.6rem;
+  color: #fbf7ff;
 }
 
 .info .container .text p {
   padding-top: 2rem;
-  color: #574cb6;
+  color: #fbf7ff;
 }
 
 .info .container .text li {
@@ -484,15 +455,15 @@ footer .second path {
 }
 
 .info .container .text li a {
-  background-color: #a398ff;
-  color: #fbf7ff;
+  background-color: #fbf7ff;
+  color: #574cb6;
   padding: 10px 15px;
   font-size: 1.2rem;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .info .container .text li a:hover {
-  background-color: #8c7fff;
+  background-color: #eedeff;
   transition: all ease-in-out 0.1s;
 }
 
@@ -521,7 +492,6 @@ footer .second path {
 @media (max-width: 1024px) {
   .info .container {
     flex-direction: column;
-    text-align: center;
   }
   .info .container .text {
     padding-right: 0;
@@ -654,12 +624,6 @@ footer .second path {
   }
 }
 
-@media (max-width: 768px) {
-  .homee .container p {
-    text-align: center;
-  }
-}
-
 .figma {
   position: relative;
   background-color: #fbf7ff;
@@ -697,19 +661,11 @@ footer .second path {
   z-index: -2;
 }
 
-.logos h2 {
-  font-size: 3.4rem;
-  color: #a398ff;
-  z-index: 3;
-  text-align: center;
-  padding-top: 3.5rem;
-}
-
 .logos .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 6rem;
+  padding-top: 4rem;
   padding-bottom: 12rem;
 }
 
@@ -723,7 +679,7 @@ footer .second path {
 
 .logos .container .text {
   max-width: 60%;
-  width: 30%;
+  width: 35%;
   color: #fbf7ff;
 }
 
@@ -764,7 +720,7 @@ footer .second path {
     flex-direction: column;
   }
   .logos .container .image {
-    width: 80%;
+    width: 100%;
     max-width: 100%;
   }
   .logos .container .image img {
@@ -775,8 +731,7 @@ footer .second path {
   }
   .logos .container .text {
     max-width: 100%;
-    width: 80%;
-    text-align: center;
+    width: 100%;
   }
   .logos .container .text img {
     width: 100%;
@@ -811,24 +766,22 @@ footer .second path {
 .design {
   position: relative;
   background-color: #a398ff;
-  z-index: -2;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .design h2 {
   font-size: 3.4rem;
-  color: #a398ff;
-  z-index: 3;
+  color: #fbf7ff;
   text-align: center;
-  padding-top: 3.5rem;
+  padding-top: 2rem;
 }
 
 .design .images {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 14vh;
   padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .design .images .second {
@@ -842,44 +795,21 @@ footer .second path {
   width: 100%;
 }
 
-.design .designsvg {
-  position: absolute;
-  top: -1px;
-  width: 100%;
-  overflow-x: hidden;
-  transform: rotate(180deg);
-  z-index: -1;
-}
-
-.design .designsvg path {
-  width: 100px;
-}
-
 @media (max-width: 1024px) {
-  .design h2 {
-    font-size: 2.8rem;
-  }
   .design .images {
     flex-direction: column;
-    margin-top: 160px;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
   .design .images .first {
     padding-bottom: 2rem;
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
   }
   .design .images .second {
-    max-width: 100%;
-  }
-  .designtwo .images {
-    flex-direction: column;
-  }
-  .designtwo .images .second {
-    max-width: 100%;
-  }
-  .designtwo .images img {
-    padding-bottom: 2rem;
-    max-width: 100%;
+    width: 125%;
+    max-width: 150%;
     height: auto;
   }
 }

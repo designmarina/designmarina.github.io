@@ -4,22 +4,15 @@
 .designtwo {
   position: relative;
   background-color: $secondary-color;
-  min-height: 90vh;
-  z-index: -2;
 
-  h2 {
-    font-size: 3.4rem;
-    color: $secondary-color;
-    z-index: 3;
-    text-align: center;
-    padding-top: 1rem;
-  }
+  z-index: -2;
 
   .images {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 8rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 
     .second {
       max-width: 53%;
@@ -31,26 +24,10 @@
       width: 100%;
     }
   }
-
-  .designsvg {
-    position: absolute;
-    top: -1px;
-    width: 100%;
-    overflow-x: hidden;
-    transform: rotate(180deg);
-    z-index: -1;
-
-    path {
-      width: 100px;
-    }
-  }
 }
 
 @media (max-width: $medium) {
   .designtwo {
-    h2 {
-      font-size: 2.8rem;
-    }
     .images {
       flex-direction: column;
 
@@ -63,14 +40,6 @@
         max-width: 100%;
         height: auto;
       }
-    }
-  }
-}
-
-@media (max-width: $xs) {
-  .designtwo {
-    h2 {
-      font-size: 3rem;
     }
   }
 }

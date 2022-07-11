@@ -4,23 +4,21 @@
 .design {
   position: relative;
   background-color: $primary-color;
-  z-index: -2;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 
   h2 {
     font-size: 3.4rem;
-    color: $primary-color;
-    z-index: 3;
+    color: $secondary-color;
     text-align: center;
-    padding-top: 3.5rem;
+    padding-top: 2rem;
   }
 
   .images {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 14vh;
     padding-bottom: 2rem;
+    padding-top: 2rem;
     .second {
       max-width: 45.7%;
       width: 100%;
@@ -32,53 +30,24 @@
       width: 100%;
     }
   }
-
-  .designsvg {
-    position: absolute;
-    top: -1px;
-    width: 100%;
-    overflow-x: hidden;
-    transform: rotate(180deg);
-    z-index: -1;
-
-    path {
-      width: 100px;
-    }
-  }
 }
 
 @media (max-width: $medium) {
   .design {
-    h2 {
-      font-size: 2.8rem;
-    }
-
     .images {
       flex-direction: column;
-      margin-top: 160px;
-
+      max-width: 100%;
+      width: 100%;
+      height: auto;
       .first {
         padding-bottom: 2rem;
-        max-width: 80%;
+        max-width: 100%;
         height: auto;
       }
 
       .second {
-        max-width: 100%;
-      }
-    }
-  }
-  .designtwo {
-    .images {
-      flex-direction: column;
-
-      .second {
-        max-width: 100%;
-      }
-
-      img {
-        padding-bottom: 2rem;
-        max-width: 100%;
+        width: 125%;
+        max-width: 150%;
         height: auto;
       }
     }

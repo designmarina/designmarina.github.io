@@ -2,9 +2,8 @@
 @import "../base/breakpoints";
 
 .info {
-  background-color: $secondary-color;
+  background-color: $primary-color;
   padding-bottom: 6rem;
-
   position: relative;
 
   .container {
@@ -19,27 +18,28 @@
       padding-bottom: 50px;
       padding-right: 1rem;
       h2 {
-        font-size: 3.4rem;
-        color: $light-color;
+        padding-top: 1.4rem;
+        font-size: 3.6rem;
+        color: $secondary-color;
       }
 
       p {
         padding-top: 2rem;
-        color: $light-color;
+        color: $secondary-color;
       }
 
       li {
         padding-top: 2rem;
 
         a {
-          background-color: $primary-color;
-          color: $secondary-color;
+          background-color: $secondary-color;
+          color: $light-color;
           padding: 10px 15px;
           font-size: 1.2rem;
-          border-radius: 10px;
+          border-radius: 5px;
 
           &:hover {
-            background-color: darken($primary-color, 5%);
+            background-color: darken($secondary-color, 5%);
             transition: all ease-in-out 0.1s;
           }
         }
@@ -72,7 +72,6 @@
   .info {
     .container {
       flex-direction: column;
-      text-align: center;
 
       .text {
         padding-right: 0;
