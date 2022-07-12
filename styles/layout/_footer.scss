@@ -5,25 +5,29 @@ footer {
   position: relative;
   background-color: $secondary-color;
   padding-bottom: 2rem;
+
   .copyright {
     display: flex;
     justify-content: center;
   }
 
   .top {
-    display: flex;
-    justify-content: space-between;
     padding-top: 1rem;
-    .text {
-      max-width: 600px;
-      word-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+      text-align: center;
+      padding-bottom: 1rem;
       color: $light-color;
     }
 
     form {
-      width: 450px;
-
+      max-width: 450px;
+      width: 100%;
       z-index: 998;
+      margin: 0 auto;
 
       textarea {
         width: 450px;

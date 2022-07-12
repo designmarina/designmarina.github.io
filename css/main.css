@@ -156,20 +156,23 @@ footer .copyright {
 }
 
 footer .top {
-  display: flex;
-  justify-content: space-between;
   padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-footer .top .text {
-  max-width: 600px;
-  word-wrap: break-word;
+footer .top h2 {
+  text-align: center;
+  padding-bottom: 1rem;
   color: #574cb6;
 }
 
 footer .top form {
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   z-index: 998;
+  margin: 0 auto;
 }
 
 footer .top form textarea {
@@ -392,7 +395,7 @@ footer .second path {
   justify-content: space-between;
   align-items: center;
   padding-top: 4rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 .designtwo .images .second {
@@ -523,8 +526,11 @@ footer .second path {
   text-align: center;
   background-color: #fbf7ff;
   position: relative;
-  z-index: -4;
-  padding-bottom: 6rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .ui h2 {
@@ -535,23 +541,25 @@ footer .second path {
 
 .ui img {
   max-width: 80%;
-  z-index: 999;
-  z-index: -2;
 }
 
-.ui .uisvg {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  left: 0;
-  overflow-x: hidden;
-  z-index: -3;
-  transform: rotate(180deg);
-  transform: scaleX(-1);
+.ui li {
+  margin: 0 auto;
+  padding: 1rem 0;
 }
 
-.ui .uisvg path {
-  width: 100px;
+.ui li a {
+  color: #fbf7ff;
+  background-color: #a398ff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.ui li a:hover {
+  background-color: #8c7fff;
+  transition: ease-in-out all 0.1s;
 }
 
 @media (max-width: 768px) {
@@ -572,7 +580,8 @@ footer .second path {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .homee .container video {
