@@ -105,3 +105,31 @@
     }
   }
 }
+
+@media (max-height: 630px) {
+  .hero {
+    .container {
+      .text-hero {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+@media (max-height: 570px) {
+  .hero {
+    .container {
+      .text-hero {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+@media (max-height: 540px) {
+  .hero {
+    .container {
+      .text-hero {
+        font-size: 1rem;
+      }
+    }
+  }
+}
