@@ -9,24 +9,52 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-
     padding-bottom: 2rem;
     padding-top: 2rem;
 
-    video {
-      max-width: 65%;
-      height: auto;
+    .iframe-container {
+      position: relative;
+      width: 10em;
+      display: inline-block;
       width: 100%;
+      padding: 0 0 50%;
 
-      margin: 0 auto;
+      iframe {
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 79%;
+        height: 90%;
+      }
     }
 
     p {
       max-width: 900px;
-      padding: 2rem 0;
+      padding-bottom: 2rem;
       margin: 0 auto;
       color: $light-color;
       width: 100%;
+    }
+
+    li {
+      margin: 0 auto;
+      padding: 1rem 0;
+      a {
+        color: $secondary-color;
+        background-color: $primary-color;
+        padding: 0.8rem 1.6rem;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+          background-color: darken($primary-color, 5%);
+          transition: ease-in-out all 0.1s;
+        }
+      }
     }
   }
 }
@@ -34,8 +62,15 @@
 @media (max-width: $large) {
   .homee {
     .container {
-      video {
-        max-width: 100%;
+      .iframe-container {
+        iframe {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      p {
+        padding-top: 1rem;
       }
     }
   }

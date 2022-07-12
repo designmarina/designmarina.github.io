@@ -158,20 +158,28 @@ footer .copyright {
 footer .top {
   padding-top: 1rem;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
 }
 
-footer .top h2 {
-  text-align: center;
+footer .top .text {
+  max-width: 450px;
+  font-size: 1.4rem;
+}
+
+footer .top .text h2 {
   padding-bottom: 1rem;
   color: #574cb6;
+}
+
+footer .top .text p {
+  padding-bottom: 1rem;
+  padding-right: 5px;
 }
 
 footer .top form {
   max-width: 450px;
   width: 100%;
-  margin: 0 auto;
 }
 
 footer .top form textarea {
@@ -182,7 +190,7 @@ footer .top form textarea {
   border-radius: 5px;
   padding: 0.8rem;
   color: #fbf7ff;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-family: inherit;
 }
 
@@ -203,6 +211,8 @@ footer .top form button {
   padding: 0.8rem;
   color: #fbf7ff;
   margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 footer .top form button:hover {
@@ -225,7 +235,7 @@ footer .top form input {
   padding: 0.8rem;
   color: #fbf7ff;
   margin-bottom: 1rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 footer .top form input::placeholder {
@@ -279,11 +289,10 @@ footer .second path {
   footer .top {
     flex-direction: column;
     justify-content: center;
-    text-align: center;
   }
   footer .top .text {
-    max-width: 100%;
     padding-bottom: 1rem;
+    margin: 0 auto;
   }
   footer .top form {
     margin: 0 auto;
@@ -336,7 +345,7 @@ footer .second path {
 .hero .first text {
   bottom: 10px;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .hero .second {
@@ -389,12 +398,18 @@ footer .second path {
   background-color: #fbf7ff;
 }
 
+.designtwo p {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #574cb6;
+  padding-bottom: 4rem;
+}
+
 .designtwo .images {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .designtwo .images .second {
@@ -433,8 +448,7 @@ footer .second path {
 }
 
 .info .container .text {
-  padding-top: 25vh;
-  max-width: 50%;
+  max-width: 100%;
   font-size: 1.3rem;
   padding-bottom: 50px;
   padding-right: 1rem;
@@ -461,21 +475,12 @@ footer .second path {
   padding: 10px 15px;
   font-size: 1.2rem;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 .info .container .text li a:hover {
   background-color: #eedeff;
   transition: all ease-in-out 0.1s;
-}
-
-.info .container .image {
-  padding-top: 25vh;
-  display: flex;
-  justify-content: right;
-}
-
-.info .container .image img {
-  height: 400px;
 }
 
 @media (max-width: 1024px) {
@@ -486,11 +491,8 @@ footer .second path {
     padding-right: 0;
     padding-top: 2rem;
   }
-  .info .container .image {
-    padding-top: 0;
-  }
-  .info .container .image img {
-    width: 100%;
+  .info .container .text p {
+    font-size: 1rem;
   }
 }
 
@@ -525,27 +527,16 @@ footer .second path {
   padding-top: 4rem;
 }
 
-.ui img {
+.ui .phones {
+  display: none;
+}
+
+.ui .phones img {
   max-width: 80%;
 }
 
-.ui li {
-  margin: 0 auto;
-  padding: 1rem 0;
-}
-
-.ui li a {
-  color: #fbf7ff;
-  background-color: #a398ff;
-  padding: 0.8rem 1.6rem;
-  border-radius: 5px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.ui li a:hover {
-  background-color: #8c7fff;
-  transition: ease-in-out all 0.1s;
+.ui img {
+  max-width: 80%;
 }
 
 @media (max-width: 768px) {
@@ -554,6 +545,15 @@ footer .second path {
   }
   .ui h2 {
     padding-top: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ui .phone {
+    display: none;
+  }
+  .ui .phones {
+    display: block;
   }
 }
 
@@ -570,24 +570,60 @@ footer .second path {
   padding-top: 2rem;
 }
 
-.homee .container video {
-  max-width: 65%;
-  height: auto;
+.homee .container .iframe-container {
+  position: relative;
+  width: 10em;
+  display: inline-block;
   width: 100%;
+  padding: 0 0 50%;
+}
+
+.homee .container .iframe-container iframe {
   margin: 0 auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 79%;
+  height: 90%;
 }
 
 .homee .container p {
   max-width: 900px;
-  padding: 2rem 0;
+  padding-bottom: 2rem;
   margin: 0 auto;
   color: #574cb6;
   width: 100%;
 }
 
+.homee .container li {
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.homee .container li a {
+  color: #fbf7ff;
+  background-color: #a398ff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.homee .container li a:hover {
+  background-color: #8c7fff;
+  transition: ease-in-out all 0.1s;
+}
+
 @media (max-width: 1200px) {
-  .homee .container video {
-    max-width: 100%;
+  .homee .container .iframe-container iframe {
+    height: 100%;
+    width: 100%;
+  }
+  .homee .container p {
+    padding-top: 1rem;
   }
 }
 
@@ -600,11 +636,34 @@ footer .second path {
   position: relative;
   width: 100%;
   max-width: 100%;
+  padding: 1rem;
+}
+
+.figma .mobile {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .figma .plan {
+    display: none;
+  }
+  .figma .tidsplan {
+    display: none;
+  }
+  .figma .mobile {
+    display: block;
+  }
+  .figma .mobile .line {
+    max-width: 50%;
+  }
 }
 
 @media (max-width: 768px) {
-  .figma {
-    display: none;
+  .figma .mobile {
+    display: block;
+  }
+  .figma .mobile .line {
+    max-width: 100%;
   }
 }
 
@@ -635,6 +694,7 @@ footer .second path {
   max-width: 60%;
   width: 35%;
   color: #fbf7ff;
+  font-size: 1.4rem;
 }
 
 .logos .container .text img {
@@ -730,6 +790,13 @@ footer .second path {
   padding-top: 2rem;
 }
 
+.design p {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #fbf7ff;
+  padding-bottom: 1.5rem;
+}
+
 .design .images {
   display: flex;
   justify-content: space-between;
@@ -782,6 +849,7 @@ footer .second path {
 
 /* The Modal (background) */
 .modal {
+  z-index: 999;
   display: none;
   /* Hidden by default */
   position: fixed;
@@ -799,9 +867,9 @@ footer .second path {
   /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
-  background-color: black;
+  background-color: white;
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   /* Black w/ opacity */
 }
 
@@ -809,7 +877,7 @@ footer .second path {
 .modal-content {
   margin: auto;
   display: block;
-  width: 100%;
+  width: 90%;
   opacity: 1 !important;
   max-width: 1200px;
 }
@@ -836,7 +904,7 @@ footer .second path {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
+  color: #020202;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -844,7 +912,7 @@ footer .second path {
 
 .modal-close:hover,
 .modal-close:focus {
-  color: #bbb;
+  color: #222222;
   text-decoration: none;
   cursor: pointer;
 }

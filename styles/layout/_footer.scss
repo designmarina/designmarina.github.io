@@ -14,20 +14,27 @@ footer {
   .top {
     padding-top: 1rem;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
 
-    h2 {
-      text-align: center;
-      padding-bottom: 1rem;
-      color: $light-color;
+    .text {
+      max-width: 450px;
+      font-size: 1.4rem;
+
+      h2 {
+        padding-bottom: 1rem;
+        color: $light-color;
+      }
+
+      p {
+        padding-bottom: 1rem;
+        padding-right: 5px;
+      }
     }
 
     form {
       max-width: 450px;
       width: 100%;
-
-      margin: 0 auto;
 
       textarea {
         width: 450px;
@@ -37,7 +44,7 @@ footer {
         border-radius: 5px;
         padding: 0.8rem;
         color: $secondary-color;
-        font-size: 0.8rem;
+        font-size: 1rem;
         font-family: inherit;
 
         &:focus {
@@ -58,6 +65,8 @@ footer {
         padding: 0.8rem;
         color: $secondary-color;
         margin-top: 0.5rem;
+        font-size: 1rem;
+        font-weight: bold;
 
         &:hover {
           background-color: darken($primary-color, 3%);
@@ -81,7 +90,7 @@ footer {
         padding: 0.8rem;
         color: $secondary-color;
         margin-bottom: 1rem;
-        font-size: 0.8rem;
+        font-size: 1rem;
 
         &::placeholder {
           color: $secondary-color;
@@ -139,11 +148,10 @@ footer {
     .top {
       flex-direction: column;
       justify-content: center;
-      text-align: center;
 
       .text {
-        max-width: 100%;
         padding-bottom: 1rem;
+        margin: 0 auto;
       }
 
       form {

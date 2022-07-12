@@ -16,25 +16,16 @@
     padding-top: 4rem;
   }
 
-  img {
-    max-width: 80%;
+  .phones {
+    display: none;
+
+    img {
+      max-width: 80%;
+    }
   }
 
-  li {
-    margin: 0 auto;
-    padding: 1rem 0;
-    a {
-      color: $secondary-color;
-      background-color: $primary-color;
-      padding: 0.8rem 1.6rem;
-      border-radius: 5px;
-      text-transform: uppercase;
-      cursor: pointer;
-      &:hover {
-        background-color: darken($primary-color, 5%);
-        transition: ease-in-out all 0.1s;
-      }
-    }
+  img {
+    max-width: 80%;
   }
 }
 
@@ -43,6 +34,18 @@
     padding-bottom: 1rem;
     h2 {
       padding-top: 1rem;
+    }
+  }
+}
+
+@media (max-width: $medium) {
+  .ui {
+    .phone {
+      display: none;
+    }
+
+    .phones {
+      display: block;
     }
   }
 }

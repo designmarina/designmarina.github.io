@@ -5,12 +5,18 @@
   position: relative;
   background-color: $secondary-color;
 
+  p {
+    text-align: center;
+    font-size: 1.4rem;
+    color: $light-color;
+    padding-bottom: 4rem;
+  }
+
   .images {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 4rem;
-    padding-bottom: 4rem;
 
     .second {
       max-width: 53%;

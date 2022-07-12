@@ -9,11 +9,37 @@
     position: relative;
     width: 100%;
     max-width: 100%;
+    padding: 1rem;
+  }
+
+  .mobile {
+    display: none;
   }
 }
 
+@media (max-width: $large) {
+  .figma {
+    .plan {
+      display: none;
+    }
+    .tidsplan {
+      display: none;
+    }
+    .mobile {
+      .line {
+        max-width: 50%;
+      }
+      display: block;
+    }
+  }
+}
 @media (max-width: $small) {
   .figma {
-    display: none;
+    .mobile {
+      .line {
+        max-width: 100%;
+      }
+      display: block;
+    }
   }
 }
