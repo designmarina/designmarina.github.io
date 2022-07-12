@@ -4,7 +4,6 @@
 .info {
   background-color: $primary-color;
   padding-bottom: 6rem;
-  position: relative;
 
   .container {
     display: flex;
@@ -53,17 +52,6 @@
       img {
         height: 400px;
       }
-    }
-  }
-  .infosvg {
-    position: absolute;
-    top: -1px;
-    width: 100%;
-    overflow-x: hidden;
-    transform: rotate(180deg);
-
-    path {
-      width: 100px;
     }
   }
 }

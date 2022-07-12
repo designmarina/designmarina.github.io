@@ -314,6 +314,7 @@ footer .second path {
 }
 
 .hero {
+  position: relative;
   height: 100vh;
   background-color: #fbf7ff;
 }
@@ -425,7 +426,6 @@ footer .second path {
 .info {
   background-color: #a398ff;
   padding-bottom: 6rem;
-  position: relative;
 }
 
 .info .container {
@@ -478,18 +478,6 @@ footer .second path {
 
 .info .container .image img {
   height: 400px;
-}
-
-.info .infosvg {
-  position: absolute;
-  top: -1px;
-  width: 100%;
-  overflow-x: hidden;
-  transform: rotate(180deg);
-}
-
-.info .infosvg path {
-  width: 100px;
 }
 
 @media (max-width: 1024px) {
