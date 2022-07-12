@@ -337,9 +337,9 @@ footer .top form input:focus {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .hero .container .text-hero {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -355,13 +355,13 @@ footer .top form input:focus {
   }
 }
 
-@media (max-height: 630px) {
+@media (max-height: 700px) {
   .hero .container .text-hero {
     font-size: 1.8rem;
   }
 }
 
-@media (max-height: 570px) {
+@media (max-height: 640px) {
   .hero .container .text-hero {
     font-size: 1.4rem;
   }
@@ -659,7 +659,7 @@ footer .top form input:focus {
 .logos .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 4rem;
   padding-bottom: 12rem;
   z-index: 2;

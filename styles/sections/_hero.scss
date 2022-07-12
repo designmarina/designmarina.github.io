@@ -78,11 +78,11 @@
   }
 }
 
-@media (max-width: $large) {
+@media (max-width: 1400px) {
   .hero {
     .container {
       .text-hero {
-        font-size: 2.6rem;
+        font-size: 2.5rem;
       }
     }
   }
@@ -106,7 +106,7 @@
   }
 }
 
-@media (max-height: 630px) {
+@media (max-height: 700px) {
   .hero {
     .container {
       .text-hero {
@@ -115,7 +115,7 @@
     }
   }
 }
-@media (max-height: 570px) {
+@media (max-height: 640px) {
   .hero {
     .container {
       .text-hero {
