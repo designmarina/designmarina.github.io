@@ -4,7 +4,7 @@
 .logos {
   position: relative;
   background-color: $primary-color;
-  z-index: -2;
+  z-index: 0;
 
   .container {
     display: flex;
@@ -12,6 +12,7 @@
     justify-content: space-between;
     padding-top: 4rem;
     padding-bottom: 12rem;
+    z-index: 2;
 
     .image {
       width: 50%;
@@ -36,7 +37,7 @@
     width: 100%;
     overflow-x: hidden;
     transform: rotate(180deg);
-    z-index: -1;
+    z-index: 1;
 
     path {
       width: 100px;

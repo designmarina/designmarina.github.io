@@ -14,11 +14,10 @@
     padding-top: 2rem;
 
     video {
-      z-index: 999;
       max-width: 65%;
       height: auto;
       width: 100%;
-      z-index: 3;
+
       margin: 0 auto;
     }
 
@@ -26,32 +25,8 @@
       max-width: 900px;
       padding: 2rem 0;
       margin: 0 auto;
-      z-index: 3;
       color: $light-color;
       width: 100%;
-    }
-  }
-  .designsvg {
-    position: absolute;
-    top: -1px;
-    width: 100%;
-    overflow-x: hidden;
-    transform: rotate(180deg);
-    z-index: 2;
-
-    path {
-      width: 100px;
-    }
-  }
-  .designsvgtwo {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    overflow-x: hidden;
-    z-index: 2;
-
-    path {
-      width: 100px;
     }
   }
 }

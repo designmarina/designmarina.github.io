@@ -129,7 +129,7 @@
       <section id="ui" class="ui">
         <h2>UX & UI</h2>
 
-        <img src="./assets/homeeScreenshots.png" alt="" />
+        <img src="./assets/homeeScreenshots.png" class="modal-target" alt="" />
         <li>
           <a
             href="https://www.figma.com/proto/3h5uEgybaabTfQk0aUeJur/Homee?node-id=366%3A451&scaling=scale-down&page-id=0%3A1&starting-point-node-id=257%3A359&show-proto-sidebar=1"
@@ -162,6 +162,7 @@
         <div class="container">
           <img
             src="./assets/Designprocess_Tidsplan.svg"
+            class="modal-target"
             alt="Info about homme design procces"
           />
         </div>
@@ -174,10 +175,14 @@
             <img
               src="./assets/Fruity_PhoneCases.png"
               alt="3 phones with a picture of a fruit on each case"
-              class="first"
+              class="first modal-target"
             />
 
-            <img src="./assets/bags.png" alt="2 bags" class="second" />
+            <img
+              src="./assets/bags.png"
+              alt="2 bags"
+              class="second modal-target"
+            />
           </div>
         </div>
       </section>
@@ -185,11 +190,15 @@
       <section class="designtwo">
         <div class="container">
           <div class="images">
-            <img src="./assets/Föräldrarådgivng_A4_.png" alt="3 bags" />
+            <img
+              src="./assets/Föräldrarådgivng_A4_.png"
+              alt="3 bags"
+              class="modal-target"
+            />
 
             <img
               src="./assets/Poster_MockUp_Föräldrarådgivning.png"
-              class="second"
+              class="second modal-target"
               alt="3 phones with a picture of a fruit on each case"
             />
           </div>
@@ -199,10 +208,18 @@
       <section class="logos">
         <div class="container">
           <div class="image">
-            <img src="./assets/BurtonTshirt.png" alt="" />
+            <img
+              src="./assets/BurtonTshirt.png"
+              alt="Tshirt"
+              class="modal-target"
+            />
           </div>
           <div class="text">
-            <img src="./assets/BurtonIllustration.png" alt="Logo of burton" />
+            <img
+              src="./assets/BurtonIllustration.png"
+              alt="Logo of burton"
+              class="modal-target"
+            />
 
             <p>
               Denna illustration skapades för Burton Flagship Store Stockholm
@@ -233,23 +250,23 @@
         <div class="top">
           <h2>Kontakta mig</h2>
           <form action="https://formspree.io/f/mwkwonqb" method="POST">
+            <input type="text" name="email" placeholder="Din epost" required />
             <input
               type="text"
-              name="email"
-              placeholder="Enter your email..."
+              name="subject"
+              placeholder="Ditt namn"
               required
             />
-            <input type="text" name="subject" placeholder="Subject" required />
 
             <textarea
               name="message"
               id="message"
               cols="30"
               rows="5"
-              placeholder="Enter your message..."
+              placeholder="Skriv ditt meddelande..."
               required
             ></textarea>
-            <button type="submit">Send</button>
+            <button type="submit">Skicka</button>
           </form>
         </div>
       </div>
@@ -262,6 +279,11 @@
         </ul>
       </div> -->
     </footer>
+
+    <div id="modal" class="modal">
+      <span id="modal-close" class="modal-close">&times;</span>
+      <img id="modal-content" class="modal-content" />
+    </div>
 
     <script src="./js/index.js"></script>
   </body>
