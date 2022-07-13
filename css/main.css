@@ -106,7 +106,7 @@ header nav .menu {
     display: none;
     position: absolute;
     flex-direction: column;
-    top: 60px;
+    top: 59px;
     text-align: center;
     width: 100%;
     left: 0;
@@ -506,7 +506,7 @@ footer .top form input:focus {
 .ui h2 {
   font-size: 3.4rem;
   color: #7f77c4;
-  padding-top: 4rem;
+  padding-top: 8vh;
 }
 
 .ui .phones {
@@ -526,7 +526,7 @@ footer .top form input:focus {
     padding-bottom: 1rem;
   }
   .ui h2 {
-    padding-top: 1rem;
+    padding-top: 8vh;
   }
 }
 
