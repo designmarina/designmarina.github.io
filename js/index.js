@@ -27,3 +27,9 @@ window.onclick = (e) => {
     modal.style.display = "none";
   }
 };
+
+document.addEventListener("click", (e) => {
+  if (!header.contains(e.target)) {
+    links.classList.remove("active");
+  }
+});
