@@ -619,7 +619,7 @@ footer .top form input:focus {
   position: relative;
   width: 100%;
   max-width: 100%;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .figma .mobile {
