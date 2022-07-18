@@ -41,6 +41,10 @@
   .coopdesigntwo {
     .container {
       flex-direction: column;
+
+      .left {
+        padding-bottom: 2rem;
+      }
     }
   }
 }

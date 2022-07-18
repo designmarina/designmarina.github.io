@@ -918,6 +918,9 @@ footer .top form input:focus {
   .coopdesigntwo .container {
     flex-direction: column;
   }
+  .coopdesigntwo .container .left {
+    padding-bottom: 2rem;
+  }
 }
 
 .coopdesignthree {
