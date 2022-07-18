@@ -1010,6 +1010,18 @@ footer .top form input:focus {
   }
 }
 
+@media (max-width: 768px) {
+  .biketrace .container h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .biketrace .container h2 {
+    font-size: 1.4rem;
+  }
+}
+
 .biketracetwo {
   padding: 3rem 0;
   background-color: #fbf7ff;

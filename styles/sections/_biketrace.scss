@@ -38,3 +38,22 @@
     }
   }
 }
+
+@media (max-width: $small) {
+  .biketrace {
+    .container {
+      h2 {
+        font-size: 2.4rem;
+      }
+    }
+  }
+}
+@media (max-width: $xs) {
+  .biketrace {
+    .container {
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
