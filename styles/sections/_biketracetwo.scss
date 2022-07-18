@@ -1,0 +1,40 @@
+@import "../base/variables";
+@import "../base/breakpoints";
+
+.biketracetwo {
+  padding: 3rem 0;
+  background-color: $secondary-color;
+  .container {
+    h2 {
+      font-size: 3.4rem;
+      color: $light-color;
+      padding-bottom: 1rem;
+    }
+    .brand {
+      display: flex;
+
+      .first {
+        padding-right: 2rem;
+      }
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: $medium) {
+  .biketracetwo {
+    .container {
+      .brand {
+        flex-direction: column;
+
+        .first {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

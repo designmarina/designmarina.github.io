@@ -1,0 +1,61 @@
+@import "../base/variables";
+@import "../base/breakpoints";
+
+.coopdesign {
+  background-color: $primary-color;
+  padding: 2rem 0;
+
+  h2 {
+    font-size: 3.4rem;
+    color: $secondary-color;
+    padding-bottom: 1rem;
+  }
+
+  .container {
+    display: flex;
+
+    .image {
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .text {
+      width: 100%;
+      max-width: 50%;
+      padding-right: 1rem;
+
+      p {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $medium) {
+  .coopdesign {
+    .container {
+      flex-direction: column-reverse;
+
+      .text {
+        max-width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: $small) {
+  .coopdesign {
+    h2 {
+      font-size: 2.4rem;
+    }
+  }
+}
+@media (max-width: $xs) {
+  .coopdesign {
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+}
