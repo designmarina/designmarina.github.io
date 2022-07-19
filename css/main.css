@@ -42,8 +42,12 @@ header nav .logo {
 }
 
 header nav .logo li a {
-  color: #574cb6;
-  font-weight: bold;
+  display: block;
+}
+
+header nav .logo li a img {
+  max-height: 45px;
+  padding-top: 6px;
 }
 
 header nav .links {
