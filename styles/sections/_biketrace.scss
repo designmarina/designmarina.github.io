@@ -2,8 +2,10 @@
 @import "../base/breakpoints";
 
 .biketrace {
-  padding: 3rem 0;
+  padding-bottom: 3rem;
   background-color: $secondary-color;
+  padding-top: 80px;
+
   .container {
     h2 {
       font-size: 3.4rem;

@@ -764,13 +764,13 @@ footer .top form input:focus {
   position: relative;
   background-color: #a398ff;
   padding-bottom: 2rem;
+  padding-top: 80px;
 }
 
 .design h2 {
   font-size: 3.4rem;
   color: #fbf7ff;
   text-align: center;
-  padding-top: 6rem;
 }
 
 .design p {
@@ -832,7 +832,8 @@ footer .top form input:focus {
 
 .coopdesign {
   background-color: #a398ff;
-  padding: 2rem 0;
+  padding-bottom: 2rem;
+  padding-top: 80px;
 }
 
 .coopdesign h2 {
@@ -984,8 +985,9 @@ footer .top form input:focus {
 }
 
 .biketrace {
-  padding: 3rem 0;
+  padding-bottom: 3rem;
   background-color: #fbf7ff;
+  padding-top: 80px;
 }
 
 .biketrace .container h2 {
