@@ -174,7 +174,7 @@ footer .top .text h2 {
 
 footer .top .text p {
   padding-bottom: 1rem;
-  padding-right: 5px;
+  padding-right: 1rem;
 }
 
 footer .top form {
@@ -820,7 +820,13 @@ footer .top form input:focus {
 
 @media (max-width: 480px) {
   .design h2 {
-    font-size: 3rem;
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .design h2 {
+    font-size: 1.8rem;
   }
 }
 
@@ -832,7 +838,7 @@ footer .top form input:focus {
 .coopdesign h2 {
   font-size: 3.4rem;
   color: #fbf7ff;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   text-align: center;
 }
 
@@ -865,15 +871,15 @@ footer .top form input:focus {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .coopdesign h2 {
     font-size: 2.4rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 320px) {
   .coopdesign h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -1017,15 +1023,15 @@ footer .top form input:focus {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .biketrace .container h2 {
     font-size: 2.4rem;
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
   .biketrace .container h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 

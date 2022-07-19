@@ -8,7 +8,7 @@
   h2 {
     font-size: 3.4rem;
     color: $secondary-color;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     text-align: center;
   }
 
@@ -46,17 +46,18 @@
     }
   }
 }
-@media (max-width: $small) {
+
+@media (max-width: $xs) {
   .coopdesign {
     h2 {
       font-size: 2.4rem;
     }
   }
 }
-@media (max-width: $xs) {
+@media (max-width: 320px) {
   .coopdesign {
     h2 {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
   }
 }

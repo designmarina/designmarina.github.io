@@ -47,7 +47,7 @@
   }
 }
 
-@media (max-width: $small) {
+@media (max-width: $xs) {
   .biketrace {
     .container {
       h2 {
@@ -56,11 +56,11 @@
     }
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 320px) {
   .biketrace {
     .container {
       h2 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
       }
     }
   }
