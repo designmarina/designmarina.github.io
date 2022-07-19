@@ -13,13 +13,14 @@
     .brand {
       display: flex;
 
-      .first {
-        padding-right: 2rem;
-      }
       img {
         width: 100%;
         max-width: 100%;
         height: auto;
+      }
+
+      .newlogo {
+        max-width: 71%;
       }
     }
   }
@@ -33,6 +34,11 @@
 
         .first {
           padding-bottom: 1rem;
+          padding-right: 0;
+        }
+
+        .newlogo {
+          max-width: 100%;
         }
       }
     }

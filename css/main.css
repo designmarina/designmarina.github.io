@@ -833,6 +833,7 @@ footer .top form input:focus {
   font-size: 3.4rem;
   color: #fbf7ff;
   padding-bottom: 1rem;
+  text-align: center;
 }
 
 .coopdesign .container {
@@ -872,13 +873,13 @@ footer .top form input:focus {
 
 @media (max-width: 480px) {
   .coopdesign h2 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
 .coopdesigntwo {
-  background-color: #fbf7ff;
-  padding: 4rem 0;
+  background-color: #a398ff;
+  padding: 2rem 0;
 }
 
 .coopdesigntwo .container {
@@ -984,21 +985,23 @@ footer .top form input:focus {
 .biketrace .container h2 {
   font-size: 3.4rem;
   color: #574cb6;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+  text-align: center;
 }
 
 .biketrace .container .brand {
   display: flex;
 }
 
-.biketrace .container .brand .first {
-  padding-right: 2rem;
-}
-
 .biketrace .container .brand img {
-  width: 100%;
+  width: 80%;
   max-width: 100%;
   height: auto;
+}
+
+.biketrace .container .brand .image {
+  display: flex;
+  justify-content: right;
 }
 
 @media (max-width: 1024px) {
@@ -1007,6 +1010,10 @@ footer .top form input:focus {
   }
   .biketrace .container .brand .first {
     padding-bottom: 1rem;
+    padding-right: 0;
+  }
+  .biketrace .container .brand img {
+    width: 100%;
   }
 }
 
@@ -1016,9 +1023,9 @@ footer .top form input:focus {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 300px) {
   .biketrace .container h2 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -1037,14 +1044,14 @@ footer .top form input:focus {
   display: flex;
 }
 
-.biketracetwo .container .brand .first {
-  padding-right: 2rem;
-}
-
 .biketracetwo .container .brand img {
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+.biketracetwo .container .brand .newlogo {
+  max-width: 71%;
 }
 
 @media (max-width: 1024px) {
@@ -1053,6 +1060,10 @@ footer .top form input:focus {
   }
   .biketracetwo .container .brand .first {
     padding-bottom: 1rem;
+    padding-right: 0;
+  }
+  .biketracetwo .container .brand .newlogo {
+    max-width: 100%;
   }
 }
 

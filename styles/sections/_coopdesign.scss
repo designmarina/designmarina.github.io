@@ -9,6 +9,7 @@
     font-size: 3.4rem;
     color: $secondary-color;
     padding-bottom: 1rem;
+    text-align: center;
   }
 
   .container {
@@ -55,7 +56,7 @@
 @media (max-width: $xs) {
   .coopdesign {
     h2 {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
     }
   }
 }
