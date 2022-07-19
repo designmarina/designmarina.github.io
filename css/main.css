@@ -86,6 +86,11 @@ header nav .links .portfolio .dropdown li {
   padding: 5px;
 }
 
+header nav .links .portfolio .dropdown li a {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 header nav .links .dropdown li:hover {
   background-color: #fbf7ff;
 }
