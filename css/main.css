@@ -999,6 +999,11 @@ footer .top form input:focus {
   padding-top: 80px;
 }
 
+.biketrace p {
+  text-align: center;
+  padding-top: 1rem;
+}
+
 .biketrace .container h2 {
   font-size: 3.4rem;
   color: #574cb6;
@@ -1049,6 +1054,11 @@ footer .top form input:focus {
 .biketracetwo {
   padding: 3rem 0;
   background-color: #fbf7ff;
+}
+
+.biketracetwo p {
+  text-align: center;
+  padding-top: 1rem;
 }
 
 .biketracetwo .container h2 {

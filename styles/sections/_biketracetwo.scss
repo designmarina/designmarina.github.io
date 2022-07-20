@@ -4,6 +4,11 @@
 .biketracetwo {
   padding: 3rem 0;
   background-color: $secondary-color;
+
+  p {
+    text-align: center;
+    padding-top: 1rem;
+  }
   .container {
     h2 {
       font-size: 3.4rem;
