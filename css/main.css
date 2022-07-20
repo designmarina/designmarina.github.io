@@ -43,11 +43,11 @@ header nav .logo {
 
 header nav .logo li a {
   display: block;
-  height: 45px;
+  height: 40px;
 }
 
 header nav .logo li a img {
-  max-height: 45px;
+  max-height: 40px;
 }
 
 header nav .links {
