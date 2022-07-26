@@ -153,6 +153,10 @@ header nav .menu {
   max-width: 80%;
 }
 
+img {
+  border-radius: 0;
+}
+
 footer {
   position: relative;
   background-color: #fbf7ff;
@@ -1095,7 +1099,6 @@ footer .top form input:focus {
 }
 
 .modal-target {
-  border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
